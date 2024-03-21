@@ -1,0 +1,131 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* default margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* container */
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* top section */
+#top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* heading */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* input fields */
+input[type="text"],
+input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus {
+    border-color: #007bff;
+}
+
+/* save button */
+#save-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#save-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Bottom section */
+#bottom h3 {
+    margin-bottom: 10px;
+}
+
+/* saved bookmarks list */
+.saved-bookmarks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/* bookmark items */
+.saved-bookmarks li {
+    background-color: #f9f9f9;
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Delete button */
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    gap: 10px;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    font-family: monospace, cursive, 'Courier New', Courier;
+    font-size: 1rem;
+}
+
+footer img {
+    filter: invert(1);
+}
